@@ -65,6 +65,16 @@ window.addEventListener('load', function() {
 });
 
 
+// ------------ HAMBUGUESA MENU -------------
+// // JavaScript para controlar la apertura/cierre del menú hamburguesa
+// const menuToggle = document.getElementsByClassName('.menu-toggle');
+// const navbar = document.getElementsByClassName('.navbar');
+
+// menuToggle.addEventListener('click', () => {
+//     navbar.classList.toggle('show');
+// });
+
+
 
 
 
