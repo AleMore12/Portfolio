@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Scss -->
+    <!-- css -->
     <link rel="stylesheet" href="./css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/service.css">
     <!-- Script -->
     <script src="./js/main.js"></script>
     <!-- animate -->
@@ -23,41 +23,32 @@
 
 </head>
 <body>
+    
     <div id="area-de-carga">
     </div>
 
 
-    <header >
-        
-        <nav role="navigation">
-            <div id="menuToggle">
-                <input type="checkbox" />
-    <span></span>
-    <span></span>
-    <span></span>
-                <ul id="menu">   
-                <a  class="navbar-link "href="#presentacion">
-                    Sobre Mi
-                </a>
-                <a class='navbar-link  'href="#section_conocimientos">
-                    Habilidades
-                </a>
-                <a class='navbar-link  'href="#section_servicios">
-                    Servicios
-                </a>
-                <a class='navbar-link  'href="#section_proyectos">
-                    Proyectos
-                </a>
-                <a class='navbar-link 'href="#">
-                    Contacto    
-                </a>
-                
-
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <a class="navbar-link" href="#presentacion">Sobre Mi</a>
+                    <a class='navbar-link  ' href="#section_conocimientos">
+                        Habilidades
+                    </a>
+                    <a class='navbar-link  ' href="#section_beneficios">
+                        Servicios
+                    </a>
+                    <a class='navbar-link  ' href="#section_proyectos">
+                        Proyectos
+                    </a>
+                    <a class='navbar-link ' href="#">
+                        Contacto
+                    </a>
                 </ul>
             </div>
-            </nav>
-
-        </header>
+        </nav>
+    </header>
     <main>
         <article id="presentacion">
             <div class="img_perfil">
@@ -101,50 +92,36 @@
         </article>
     </section>
     
-        <section id="section_servicios">
-            <div>
-                <h2>Servicios</h2>
+        <section id="section_beneficios">
+            <div class="title_benefits">
+                <h2>Beneficios de tener un sitio web profesional</h2>
             </div>
-            <article class="servicios">
-                <div class="servicio_1 cardBlur">
-                    <h4>One Page</h4>
-                        <P>Lorem ipsum dolor sit amet.</P>
-                    <button class="button type--A">
-                        <a href="#" >
-                            <div class="button__line"></div>
-                            <div class="button__line"></div>
-                            <span class="button__text">Click Aquí</span>
-                            <div class="button__drow1"></div>
-                            <div class="button__drow2"></div>
-                        </a>
-                    </button>
+            <article class="beneficios">
+                <div class="benefit_div">
+                    <h4>Apariencia profesional</h4>
+                    <p>Un sitio web profesional crea una buena impresión y aumenta la confianza de los visitantes en tu marca.</p>
+
                 </div>
-                <div class="servicio_2 cardBlur">
-                    <h4>Landing Page</h4>
-                        <P>Lorem ipsum dolor sit amet.</P>
-                    <button class="button type--A">
-                        <a href="#" >
-                            <div class="button__line"></div>
-                            <div class="button__line"></div>
-                            <span class="button__text">Click Aquí</span>
-                            <div class="button__drow1"></div>
-                            <div class="button__drow2"></div>
-                        </a>
-                    </button>
+                <div class="benefit_div">
+                    <h4>Mayor visibilidad</h4>
+                    <p>Tener un sitio web te ayuda a llegar a un público más amplio y atraer a potenciales clientes.</p>
+
                 </div>
-                    <div class="servicio_3 cardBlur">
-                        <h4>E-Commerce</h4>
-                            <P>Lorem ipsum dolor sit amet.</P>
-                        <button class="button type--A">
-                            <a href="#" >
-                                <div class="button__line"></div>
-                                <div class="button__line"></div>
-                                <span class="button__text">Click Aquí</span>
-                                <div class="button__drow1"></div>
-                                <div class="button__drow2"></div>
-                            </a>
-                        </button>
-                    </div>
+                <div class="benefit_div">
+                    <h4>Generación de leads</h4>
+                    <p>Un sitio web bien diseñado y optimizado es una herramienta efectiva para generar leads y convertir visitantes en clientes.</p>
+
+                </div>
+                
+                <button class="button type--A btn_b">
+                    <a href="./pages/service.html">
+                        <div class="button__line"></div>
+                        <div class="button__line"></div>
+                        <span class="button__text">Conocé los Servicios</span>
+                        <div class="button__drow1"></div>
+                        <div class="button__drow2"></div>
+                    </a>
+                </button>
             </article>
         </section>
         
@@ -182,13 +159,12 @@
 
 
     <footer>
-        <!-- COMPLETAR -->
         <ul>
             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true">
                 <svg width="45" height="auto" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"></path>
                 </svg>
-                </i></a>
+            </i></a>
             </li>
             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true">
                 <svg width="40" height="auto" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -197,7 +173,6 @@
                     <path d="M17.5 6.5h.01"></path>
                 </svg>
             </i></a>
-            
             </li>
             <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true">
                 <svg width="45" height="auto" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -1,25 +1,6 @@
 // Efecto desplazamiento en nav con las sections
+// AÑADIR
 
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.navbar-link');
-
-    window.addEventListener('scroll', function() {
-        const fromTop = window.scrollY;
-
-        navLinks.forEach(link => {
-            const section = document.querySelector(link.getAttribute('href'));
-            if (
-                section.offsetTop <= fromTop + 50 &&
-                section.offsetTop + section.offsetHeight > fromTop + 50
-            ) {
-                link.classList.add('active');
-                animation.classList.add('start-' + link.innerHTML.toLowerCase());
-            } else {
-                link.classList.remove('active');
-            }
-        });
-    });
-});
 // ---------------------------------------- CARDS  ----------------------------------- //
 
 // CARDS ---CONOCIMIENTOS
