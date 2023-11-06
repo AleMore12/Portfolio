@@ -227,8 +227,12 @@ header nav a.active {
   display: grid;
   grid: repeat(2,2fr) / repeat(3,2fr) ;
   justify-items: center;
-  column-gap: 4vh;
+  gap: 8vh;
   margin-left: 2rem;
+  &&
+  h4 {
+    font-size: 25px;
+  }
 }   
 .title_benefits{
   margin-bottom: 7rem;
@@ -241,7 +245,7 @@ header nav a.active {
 #section_proyectos {
   height: auto;
   padding-top: 30px;
-  margin-top: 250px;
+  margin-top: 25px;
   &&
   h3{
     font-size: 20px;
