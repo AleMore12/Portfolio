@@ -44,7 +44,7 @@
 
 /* --------ANIMACION BUTTON SERVICIOS---------- */
 .type--A {
-    --line_color: rgba(135, 184, 196, 0.76);
+    --line_color: rgba(0, 162, 255, 0.637);
     --back_color: rgba(255, 255, 255, 0.829);
     background-color: rgb(252, 249, 249);
     border-radius: 50px;

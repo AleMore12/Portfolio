@@ -93,7 +93,7 @@ header nav a {
     display: block;
     width: 0;
     height: 3px;
-    background-color: rgb(65, 186, 207);
+    background-color: rgb(0, 162, 255);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -188,10 +188,11 @@ header nav a.active {
       flex-direction: row;
       justify-content: center;
       align-content: center;
+      gap: 10px;
     }
   }
 }
-#section_conocimientos .conocimiento_1,.conocimiento_2,.conocimiento_3 {
+#section_conocimientos .conocimiento_1 {
   background-image: url(../img/backDiv1.jpg);
   background-size: cover;
   width: 350px;
@@ -235,23 +236,35 @@ header nav a.active {
   }
 }   
 .title_benefits{
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
 }
-
-
+.span_work {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 7rem;
+  background-color: rgb(0, 162, 255);
+  margin-left: 10rem ;
+  margin-right:10rem ;
+  border-radius: 30px;
+  &&
+  h3 {
+    font-size: 35px;
+  }
+}
 
 /* ------------------PROYECTOS---------------- */
 
 #section_proyectos {
-  height: auto;
-  padding-top: 30px;
-  margin-top: 25px;
+  margin-top: 14rem !important;
+  padding-top: 0
+;
   &&
   h3{
     font-size: 20px;
     text-align: center;
     margin-bottom: 15px;
-    margin-top: 15px;
   }
   &&
   .art_proyect {
@@ -275,15 +288,15 @@ footer {
   background: rgb(114,125,126);
   background: linear-gradient(0deg, rgba(114,125,126,1) 0%, rgba(255,255,255,1) 100%);
   &&
-  h4 {
-    font-size: 35px;
+  h3 {
+    font-size: 35px !important;
   }
   &&
   .footer_ul {
     display: flex;
     flex-direction: row-reverse;
     justify-content: start;
-    padding-top: 4rem;
+    padding-top: 1.5rem;
     padding-left: 10px; ;
   }
 }
