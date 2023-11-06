@@ -8,8 +8,10 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/service.css">
+    <link rel="stylesheet" href="./css/carrousel.css">
     <!-- Script -->
     <script src="./js/main.js"></script>
+    <script src="./Js/carrousel.js"></script>
     <!-- animate -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Ultra&display=swap" rel="stylesheet">
     <!-- Fonts -->
@@ -17,9 +19,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Oswald&display=swap" rel="stylesheet">
 
+    <!-- flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-
-    
 
 </head>
 <body>
@@ -62,11 +65,10 @@
     </main>
 
     <section id="section_conocimientos">
-        <h2>Conocimientos</h2>
+        <h2> Conocimientos </h2>
         <article class="conocimientos">
             <div class="conocimiento_1  cardBlur">
                 <h4>HTML/CSS</h4>
-                <!-- Logo-->
                 <div class="img_conocimiento">
                     <img src="./img/html-5.png" alt="conocimiento">
                     <img src="./img/css-3.png" alt="conocimiento">
@@ -75,7 +77,6 @@
             </div>
             <div class="conocimiento_2 cardBlur">
                 <h4>JAVASCRIPT</h4>
-                <!-- Logo-->
                 <div class="img_conocimiento">
                     <img src="./img/js.png" alt="conocimiento">
                 </div>
@@ -83,34 +84,60 @@
             </div>
             <div class="conocimiento_3 cardBlur">
                 <h4>REACT</h4>
-                <!-- Logo -->
                 <div class="img_conocimiento">
                     <img src="./img/physics.png" alt="conocimiento">
                 </div>
                 <P>Lorem ipsum dolor sit amet.</P>
             </div>
+            <div class="conocimiento_2 cardBlur">
+                <h4>BOOTSTRAP</h4>
+                <div class="img_conocimiento">
+                    <img src="./img/js.png" alt="conocimiento">
+                </div>
+                <P>Lorem ipsum dolor sit amet.</P>
+            </div>
+            <div class="conocimiento_2 cardBlur">
+                <h4>GIT/GITHUB</h4>
+                <div class="img_conocimiento">
+                    <img src="./img/js.png" alt="conocimiento">
+                </div>
+                <P>Lorem ipsum dolor sit amet.</P>
+            </div>
+            <div class="conocimiento_2 cardBlur">
+                <h4>WORDPRESS</h4>
+                <div class="img_conocimiento">
+                    <img src="./img/js.png" alt="conocimiento">
+                </div>
+                <P>Lorem ipsum dolor sit amet.</P>
+            </div>
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, hic?</P>
         </article>
     </section>
     
         <section id="section_beneficios">
             <div class="title_benefits">
-                <h2>Beneficios de tener un sitio web profesional</h2>
+                <h2> Beneficios de tener un sitio web profesional </h2>
             </div>
             <article class="beneficios">
                 <div class="benefit_div">
                     <h4>Apariencia profesional</h4>
                     <p>Un sitio web profesional crea una buena impresión y aumenta la confianza de los visitantes en tu marca.</p>
-
+                </div>
+                <div class="benefit_div">
+                    <h4>Mantenimiento y soporte continuo</h4>
+                    <p>Brindamos servicios de mantenimiento y soporte técnico para asegurarnos de que tu sitio web funcione sin problemas.</p>
                 </div>
                 <div class="benefit_div">
                     <h4>Mayor visibilidad</h4>
                     <p>Tener un sitio web te ayuda a llegar a un público más amplio y atraer a potenciales clientes.</p>
-
                 </div>
                 <div class="benefit_div">
                     <h4>Generación de leads</h4>
                     <p>Un sitio web bien diseñado y optimizado es una herramienta efectiva para generar leads y convertir visitantes en clientes.</p>
-
+                </div>
+                <div class="benefit_div">
+                    <h4>Generación de leads</h4>
+                    <p>Un sitio web bien diseñado y optimizado es una herramienta efectiva para generar leads y convertir visitantes en clientes.</p>
                 </div>
                 
                 <button class="button type--A btn_b">
@@ -127,27 +154,51 @@
         
         <section id="section_proyectos">
             <span class="title_proyectos">
-                <h2>Proyectos</h2>
-                <h4>Proyectos más recientes</h4>
+                <h2> Proyectos </h2>
+                <h3>Proyectos más recientes</h3>
             </span>
             <article class="art_proyect">
-                <div>
-                    <!-- Agregar  
-                        -hover con padding
-                        -link a las imágenes para mandarme al proyecto -->
-                    <img src="./img/github.png" alt="" width="200px" height="200px">
-                    <p>Lorem ipsum dolor sit amet.</p>
+                <!----------------------- Carrousel ----------------->
+                <div class="carousel js-flickity"
+                    data-flickity='{ "fullscreen": true, "imagesLoaded": true, "percentPosition": true, "autoPlay": 10000, "pauseAutoPlayOnHover": false, "freeScroll": false, "wrapAround": true, "setGallerySize": false }'>
+                    <div class="carousel-cell">
+                        <div class="img-wrapper">
+                            <img src="http://via.placeholder.com/600x400" alt="test img" />
+                            <span><h5>Landing Page</h5></span>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="yummy" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+                        <span><h5>Landing Page</h5></span>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+                        <span><h5>E-Commerce</h5></span>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
+                    </div>
                 </div>
-                <div>
-                    <img src="./img/github.png" alt="" width="200px" height="200px">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div>
-                    <img src="./img/github.png" alt="" width="200px" height="200px">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-            </article>
-        </section>
+                <!----------------------- Carrousel ----------------->
+
 
     <!-- Agregar section CONTACTO -->
         <!-- Agregar
@@ -159,7 +210,8 @@
 
 
     <footer>
-        <ul>
+        <h4>Contactame en mis redes sociales!</h4>
+        <ul class="footer_ul">
             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true">
                 <svg width="45" height="auto" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"></path>

@@ -1,3 +1,9 @@
+/* ---------GLOBAL--------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html, body {
   scroll-behavior: smooth;
 }
@@ -6,14 +12,18 @@ h2,h3, h4 {
   font-family: 'Kanit', sans-serif;
   color: rgb(0, 0, 0);
 }
+h2 {
+  font-size: 45px;
+  padding-left: 35px;
+}
 p {
   font-family: 'Oswald', sans-serif;
   color: rgb(20, 20, 20);
 }
 body {
   background-image: url(../img/back-body.jpg);
+  overflow-x: hidden;
 }
-
 
 /* ------ANIMACION DE CARGA------- */
 #area-de-carga {
@@ -48,7 +58,6 @@ body {
       display: none;
   }
 }
-
 
 
 header {
@@ -99,7 +108,6 @@ header nav a.active {
   color: rgb(65, 186, 207); 
 }
 
-
 /* ---------------------PRESENTACION-------------- */
 #presentacion {
   display: grid;
@@ -110,6 +118,11 @@ header nav a.active {
   margin-top: 50px;
   margin-bottom: 348px;
   height: 375px; 
+  &&
+  .img_perfil {
+    border-radius: 50%;
+    animation: floatAnimation 3s infinite ease-in-out;
+  }
   &&
   img {
     width: 20rem;
@@ -137,12 +150,6 @@ header nav a.active {
   }
 }
 
-.img_perfil {
-  border-radius: 50%;
-  animation: floatAnimation 3s infinite ease-in-out;
-
-
-}
   
 @keyframes floatAnimation {
   0% {
@@ -164,25 +171,25 @@ header nav a.active {
   height: auto;
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
-  margin-top: 250px;
-
-}
-#section_conocimientos h2 {
-  font-size: 45px;
-  padding-left: 35px;
-}
-#section_conocimientos .conocimientos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 500px;
-  justify-items: center;
-}
-#section_conocimientos .conocimientos .img_conocimiento {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-content: center;
+  padding-top: 200px;
+  margin-top: 250px;
+  margin-bottom: 28rem;
+  &&
+  .conocimientos {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    && 
+    .img_conocimiento {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+    }
+  }
 }
 #section_conocimientos .conocimiento_1,.conocimiento_2,.conocimiento_3 {
   background-image: url(../img/backDiv1.jpg);
@@ -216,39 +223,16 @@ header nav a.active {
 /* -----------------BENEFICIOS---------------- */
 
 
-#section_beneficios {
-  margin-top: 25rem;
-  &&
-  .title_benefits{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    width: 50rem;
-    &&
-    h2 {
-      font-size: 45px;
-      padding-left: 35px;
-    }
-  }
-  &&
-  .beneficios {
-    display: grid;
-    grid: repeat(3,auto) / repeat(3,auto);
-    row-gap: 55px;
-    column-gap: 55px;
-    &&
-    .btn_b {
-      display: block;
-      margin-left: 130%;
-    }
-    &&
-    h4{
-      font-size: 24px;
-    }
-  }
+#section_beneficios .beneficios{
+  display: grid;
+  grid: repeat(2,2fr) / repeat(3,2fr) ;
+  justify-items: center;
+  column-gap: 4vh;
+  margin-left: 2rem;
+}   
+.title_benefits{
+  margin-bottom: 7rem;
 }
-
 
 
 
@@ -256,39 +240,48 @@ header nav a.active {
 
 #section_proyectos {
   height: auto;
-  display: flex;
-  flex-direction: column;
   padding-top: 30px;
   margin-top: 250px;
-  
   &&
-  h2 {
-    font-size: 45px;
-    padding-left: 35px;
+  h3{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
-  
+  &&
   .art_proyect {
-    display: grid;
-    grid-template-columns: repeat(3,3fr);
-    grid-template-rows: auto;
-    justify-items: center;
-    gap: 40px;
-    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: auto;
+    &&
+    h2 {
+      font-size: 45px;
+      padding-left: 35px;
+    }
   }
 }
 
-
 /* ---------------FOOTER--------------- */
 footer {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
+  width: 100%;
   background-size: cover;
-  margin-top: 240px;
-  height: 200px;
+  margin-top: 12rem;
+  height: 300px;
   background: rgb(114,125,126);
   background: linear-gradient(0deg, rgba(114,125,126,1) 0%, rgba(255,255,255,1) 100%);
+  &&
+  h4 {
+    font-size: 35px;
+  }
+  &&
+  .footer_ul {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    padding-top: 4rem;
+    padding-left: 10px; ;
+  }
 }
 @media (max-width: 600px) {
   ul {
@@ -422,11 +415,11 @@ ul li:hover:nth-child(5) a::after {
 
 
 /* -------------RESPONSIVE--------------- */
-@media (max-width: 740px) {
+@media (max-width: 748px) {
   header nav { 
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
+    justify-content: end;
     a {
       line-height: 12px;
       margin-top: 12px;
@@ -437,12 +430,10 @@ ul li:hover:nth-child(5) a::after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    justify-items: center;
-    padding-left: 22rem;
     &&
-    img {
+    .img_perfil {
       margin-top: 65vh;
-      padding-right: 18rem;
+      margin-right: 65%;
     }
   }
   #section_conocimientos {
@@ -451,19 +442,21 @@ ul li:hover:nth-child(5) a::after {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      margin-left: 22vh;      
       gap: 45px;
     }
   }
-  #section_beneficios {
+  #section_beneficios .beneficios{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    margin:auto;
-    padding-top: 10rem;
+    align-content: center;
   }
+  h2{
+    width: 30vh;
+  }
+}
+
   #section_servicios {
     .servicios {
       display: flex;
@@ -478,8 +471,9 @@ ul li:hover:nth-child(5) a::after {
     }
   }
   #section_proyectos {
-    margin-top: 62rem;
-    .art_proyect, .title_proyectos {
+    margin-top: 65rem;
+    &&
+    .art_proyect {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -499,7 +493,7 @@ ul li:hover:nth-child(5) a::after {
 
   /* ---------------ANIMATION OF HAMBURGUER---------- */
   
-}
+
 
 
 
